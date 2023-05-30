@@ -13,7 +13,7 @@ def english_to_french(text1):
     """
     This function translate english to french
     """
-    frenchtranslation = language_translator.translate(text=text1, model_id='en-ur').get_result()
+    frenchtranslation = language_translator.translate(text=text1, model_id='en-fr').get_result()
 
     return frenchtranslation.get("translations")[0].get("translation")
 def french_to_english(text1):
@@ -24,4 +24,4 @@ def french_to_english(text1):
 
     return englishtranslation.get("translations")[0].get("translation")
 
-print(english_to_french('I want to tell you something but I can not'))
+print(english_to_french('Hello'))
